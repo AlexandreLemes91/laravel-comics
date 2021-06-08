@@ -1,0 +1,52 @@
+/*******************************************
+    GLOBAL
+*******************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #1c1c1c;
+  min-height: 100vh;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*******************************************
+HEADER
+*******************************************/
+header {
+  background-color: white;
+  color: #40514b;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .container li {
+  margin-left: 20px;
+  padding: 50px 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+header .container li:hover {
+  border-bottom: 2px solid #0a7aea;
+  color: #0a7aea;
+}
