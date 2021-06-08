@@ -4,7 +4,7 @@
 
         <ul>
             <a href="{{ route('home') }}"><li>COMICS</li></a>
-            <a href="{{ route('home') }}"><li>NEWS</li></a>
+            <a href="{{ route('news') }}"><li>NEWS</li></a>
         </ul>
     </div>
 </header>
