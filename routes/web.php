@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('dc-database');
+
+    return view('home', ['comics'=> $comics]);
 })->name('home');

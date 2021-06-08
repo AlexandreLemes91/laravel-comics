@@ -1,0 +1,27 @@
+section.container{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .comic{
+        width: calc( 100% / 6 - 20px);
+        margin: 20px 10px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    
+        img{
+            max-width: 100%;
+            object-position: top;
+        }
+    
+        h2{
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 15px 0;
+        }
+    }
+}

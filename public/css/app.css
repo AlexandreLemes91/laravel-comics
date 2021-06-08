@@ -12,6 +12,11 @@ body {
   background-color: #1c1c1c;
   min-height: 100vh;
   font-weight: 600;
+  padding-bottom: 135px;
+}
+
+main {
+  padding-top: 125px;
 }
 
 .container {
@@ -33,6 +38,8 @@ a {
 HEADER
 *******************************************/
 header {
+  position: fixed;
+  width: 100%;
   background-color: white;
   color: #40514b;
 }
@@ -49,4 +56,74 @@ header .container li {
 header .container li:hover {
   border-bottom: 2px solid #0a7aea;
   color: #0a7aea;
+}
+
+/*******************************************
+COMICS
+*******************************************/
+section.container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.container .comic {
+  width: calc( 100% / 6 - 20px);
+  margin: 20px 10px;
+  transition: 0.3s;
+}
+section.container .comic:hover {
+  transform: scale(1.1);
+}
+section.container .comic img {
+  max-width: 100%;
+  -o-object-position: top;
+     object-position: top;
+}
+section.container .comic h2 {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+/*******************************************
+FOOTER
+*******************************************/
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #303030;
+  border-top: 10px solid #0a7aea;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+footer .container .btn {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 3px solid #0a7aea;
+  transition: 0.3s, box-shadow 1.2s;
+}
+footer .container .btn:hover {
+  color: #0a7aea;
+  border-color: white;
+  box-shadow: 20px 0px 25px white, -20px 0px 25px white;
+}
+footer .container ul {
+  display: flex;
+}
+footer .container ul li {
+  margin-left: 10px;
+}
+footer .container ul li img {
+  transition: 0.25s;
+}
+footer .container ul li:hover img {
+  filter: brightness(300%);
 }
